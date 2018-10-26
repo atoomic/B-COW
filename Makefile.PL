@@ -18,12 +18,9 @@ my %WriteMakefileArgs = (
   "NAME" => "B::COW",
   "PREREQ_PM" => {},
   "TEST_REQUIRES" => {
+    "Devel::Peek" => 0,
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
-    "File::Temp" => 0,
-    "Test2::Bundle::Extended" => 0,
-    "Test2::Plugin::NoWarnings" => 0,
-    "Test2::Tools::Explain" => 0,
     "Test::More" => 0
   },
   "VERSION" => "0.001",
@@ -34,12 +31,9 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Devel::Peek" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
-  "File::Temp" => 0,
-  "Test2::Bundle::Extended" => 0,
-  "Test2::Plugin::NoWarnings" => 0,
-  "Test2::Tools::Explain" => 0,
   "Test::More" => 0
 );
 
