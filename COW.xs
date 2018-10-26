@@ -62,7 +62,7 @@ CODE:
 #else
     if ( SvIsCOW(sv) ) XSRETURN_IV( CowREFCNT(sv) );
 #endif
-    XSRETURN_NO;
+    XSRETURN_UNDEF;
 }
 OUTPUT:
      RETVAL

@@ -25,6 +25,13 @@ if ( $] >= 5.020 ) {
     is cowrefcnt_max() , 255, "cowrefcnt_max: might need to adjust...";
 
     {
+        my $c = $b . 'uncow';
+        ok is_cow($b), "b is_cow";
+        ok !is_cow($c), "c !is_cow";
+        is cowrefcnt( $c ), undef, "cowrefcnt on uncowed SvPV";
+    }
+
+    {
         my $str = "this is a string";
         my @a;
         push @a, $str for 1..100;
