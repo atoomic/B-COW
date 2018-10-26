@@ -45,7 +45,7 @@ CODE:
 #if !B_CAN_COW
     XSRETURN_UNDEF;
 #else
-    if ( SvIsCOW(sv) ) XSRETURN_YES;
+    if ( SvPOK(sv) && SvIsCOW(sv) ) XSRETURN_YES;
 #endif
     XSRETURN_NO;
 }
