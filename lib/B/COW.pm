@@ -31,6 +31,12 @@ our %EXPORT_TAGS = (
 
 =encoding utf-8
 
+=begin markdown
+
+[![](https://github.com/atoomic/B-COW/workflows/linux/badge.svg)](https://github.com/atoomic/B-COW/actions) [![](https://github.com/atoomic/B-COW/workflows/macos/badge.svg)](https://github.com/atoomic/B-COW/actions) [![](https://github.com/atoomic/B-COW/workflows/windows/badge.svg)](https://github.com/atoomic/B-COW/actions)
+
+=end markdown
+
 =head1 SYNOPSIS
 
 # EXAMPLE: examples/synopsis.pl
