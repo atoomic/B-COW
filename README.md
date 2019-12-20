@@ -76,6 +76,8 @@ The COWREFCNT is stored at the end of the PV, after the the "\\0".
 
 That value is limited to 255, when we reach 255, a new PV would be created,
 
+[![](https://github.com/atoomic/B-COW/workflows/linux/badge.svg)](https://github.com/atoomic/B-COW/actions) [![](https://github.com/atoomic/B-COW/workflows/macos/badge.svg)](https://github.com/atoomic/B-COW/actions) [![](https://github.com/atoomic/B-COW/workflows/windows/badge.svg)](https://github.com/atoomic/B-COW/actions)
+
 # FUNCTIONS
 
 ## can\_cow()
