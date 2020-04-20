@@ -41,11 +41,14 @@ jobs:
       image: perl:${{ matrix.perl-version }}
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: perl -V
         run: perl -V
       - name: Install Dependencies
-        run: curl -sL https://git.io/cpm | perl - install -g --show-build-log-on-failure
+        uses: perl-actions/install-with-cpm@v1.3
+        with:
+          cpanfile: "cpanfile"
+          sudo: false
       - name: perl Makefile.PL
         run: perl Makefile.PL
       - name: make
