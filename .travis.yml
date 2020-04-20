@@ -4,7 +4,7 @@ branches:
     - /^gh\d+/
 language: perl
 matrix:
-   fast_finish: true
+  fast_finish: true
 #   allow_failures:
 #     - perl: "5.12"
 #     - perl: "5.10"
@@ -29,4 +29,3 @@ perl:
   - "5.8.8"
 script:
   - perl Makefile.PL && make test
-
