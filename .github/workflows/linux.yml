@@ -22,6 +22,7 @@ jobs:
 
     strategy:
       matrix:
+        fail-fast: false
         perl-version:
           - 'latest'
           - '5.30'
