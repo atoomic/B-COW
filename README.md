@@ -4,7 +4,7 @@ B::COW - B::COW additional B helpers to check COW status
 
 # VERSION
 
-version 0.003
+version 0.004
 
 # SYNOPSIS
 
