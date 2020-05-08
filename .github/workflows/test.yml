@@ -144,13 +144,14 @@ jobs:
           - "5.28"
           - "5.26"
           - "5.24"
-          - "5.22"
-          - "5.20.3"
-          - "5.18.4"
-          - "5.16.3"
-          - "5.14.4"
-          - "5.12.5"
-          - "5.10.1"
+          # make issue <= 5.22 view GH issue https://github.com/shogo82148/actions-setup-perl/issues/223
+          # - "5.22"
+          # - "5.20.3"
+          # - "5.18.4"
+          # - "5.16.3"
+          # - "5.14.4"
+          # - "5.12.5"
+          # - "5.10.1"
     needs: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
