@@ -12,9 +12,6 @@
 #include <XSUB.h>
 #include <embed.h>
 
-
-#define MIN_PERL_VERSION_FOR_COW  20
-
 #if defined(SV_COW_REFCNT_MAX)
 #   define B_CAN_COW 1
 #else
