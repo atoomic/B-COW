@@ -44,7 +44,7 @@ jobs:
 ###
 
   linux:
-    name: "linux Perl v${{ matrix.perl-version }}"
+    name: "Perl v${{ matrix.perl-version }}"
     runs-on: ubuntu-latest
 
     env:
