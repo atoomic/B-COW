@@ -23,6 +23,8 @@
 
 MODULE = B__COW       PACKAGE = B::COW
 
+PROTOTYPES: DISABLE
+
 SV*
 can_cow()
 CODE:
